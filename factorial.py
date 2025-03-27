@@ -1,12 +1,13 @@
-def factorial_recursive(n):
-    """Calculate factorial using recursion."""
+import math
+
+
+def factorial_math(n):
+    """Calculate factorial using Python's built-in math module."""
     if n < 0:
         return "Factorial is not defined for negative numbers."
-    if n == 0 or n == 1:
-        return 1
-    return n * factorial_recursive(n - 1)
+    return math.factorial(n)
 
 
 # Example Usage
 num = 5
-print(f"Factorial of {num} is: {factorial_recursive(num)}")
+print(f"Factorial of {num} is: {factorial_math(num)}")
